@@ -69,3 +69,30 @@ def menu():
 
 
 menu()
+import random
+
+def is_road_straight():
+    # Simulate whether the road is straight or not
+    return random.choice([True, False])
+
+def is_building_in_corner():
+    # Simulate whether there is a building in the corner or not
+    return random.choice([True, False])
+
+def walk():
+    print("Walking...")
+
+def check_google_maps():
+    print("Removing phone from pocket and checking Google Maps...")
+
+# Loop until a building is found in the corner
+while not is_building_in_corner():
+    # Check if the road is straight
+    while is_road_straight():
+        walk()
+
+    # Once the road is not straight, check Google Maps
+    check_google_maps()
+
+# Building found in the corner
+print("Found a building in the corner!")
