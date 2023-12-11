@@ -24,12 +24,12 @@ def calculate_average_mark(student):
     return total / number
 
 
-# s = create_student()
-# print(calculate_average_mark(s))
-# add_marks(s, 5)
-# print(calculate_average_mark(s))
-# add_marks(s, 10)
-# print(calculate_average_mark(s))
+s = create_student()
+print(calculate_average_mark(s))
+add_marks(s, 5)
+print(calculate_average_mark(s))
+add_marks(s, 10)
+print(calculate_average_mark(s))
 
 def print_student_details(student):
     print("{}, average mark: {}. ".format(student['name'],
