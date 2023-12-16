@@ -90,6 +90,7 @@ while not is_building_in_corner():
     # Check if the road is straight
     while is_road_straight():
         walk()
+        
 
     # Once the road is not straight, check Google Maps
     check_google_maps()
